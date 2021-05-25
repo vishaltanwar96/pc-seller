@@ -24,7 +24,7 @@ Create admin user using
 python manage.py createsuperuser
 ```
 
-Note: For endpoints accessible by admin, use the following header in your requests ```Authorization: Token 493964749b832ddd5b2f28c```
+Note: For endpoints accessible by admin, generate a token using the admin credentials in the login API and then use the token in headers like this ```Authorization: Token <token_value_here>```
 
 APIs are accessible at following endpoints:
 ```shell
