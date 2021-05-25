@@ -38,6 +38,8 @@ APIs are accessible at following endpoints:
 [DELETE] localhost:8000/api/products/:id/ (Delete a product)
 ```
 
+For filtering options, please use the Browsable API interface. Visit ```localhost:8000/api/products/``` using your browser and click the ```Filters``` option.
+
 # Running tests
 ```shell
 python manage.py test --verbosity 2
