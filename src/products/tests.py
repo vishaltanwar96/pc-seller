@@ -14,19 +14,12 @@ class ProductAPITests(APITestCase):
 
     def setUp(self):
 
+        self.product_list_url = reverse("product-list")
+
         self.admin_email = "vishal.tanwar@somedomain.com"
         self.admin_password = "StrongPassword#!8928&"
-        self.non_admin_email = "someuser@somedomain.com"
-        self.non_admin_password = self.admin_password
-        self.product_list_url = reverse("product-list")
         self.admin_user = User.objects.create_superuser(
             first_name="Vishal", last_name="Tanwar", email=self.admin_email, password=self.admin_password
-        )
-        self.user = User.objects.create_superuser(
-            first_name="SomeFirstName",
-            last_name="SomeLastName",
-            email=self.non_admin_email,
-            password=self.non_admin_password,
         )
         self.token = Token.objects.create(user=self.admin_user)
 
