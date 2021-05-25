@@ -29,6 +29,7 @@ APIs are accessible at following endpoints:
 [POST] localhost:8000/api/users/register/ (For non admin user registration)
 [POST] localhost:8000/api/users/login/ (Generating token for authentication)
 [GET] localhost:8000/api/products/ (Listing all products)
+[POST] localhost:8000/api/products/ (Create a product)
 [GET] localhost:8000/api/products/:id/ (Get a single product)
 [PUT] localhost:8000/api/products/:id/ (Update a product)
 [PATCH] localhost:8000/api/products/:id/ (Update a product)
