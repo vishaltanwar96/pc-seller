@@ -19,10 +19,9 @@ from django.core.exceptions import ImproperlyConfigured
 def check_environment_variable(variable_name):
 
     try:
-        value = os.environ[variable_name]
+        return os.environ[variable_name]
     except KeyError:
         raise ImproperlyConfigured(f'Please set environment variable -> {variable_name}')
-    return value
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
